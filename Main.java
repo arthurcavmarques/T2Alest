@@ -8,10 +8,10 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Tabuleiro tab = lerTabuleiro();
 
-        // Integração com o solver (a ser chamada pela Pessoa 2)
-        // Exemplo de uso (descomentar na integração):
-        // int passos = new BuscaBFS().bfs(getStart(), getTarget(), tab);
-        // System.out.println(passos);
+        // Executa a BFS a partir da posição inicial 'C' até o alvo 'S'.
+        // Retorna o menor número de movimentos do cavalo, ou -1 se inalcançável.
+        int passos = new BuscaBFS().bfs(getStart(), getTarget(), tab);
+        System.out.println(passos);
     }
     public static Tabuleiro lerTabuleiro() throws Exception {
     java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));

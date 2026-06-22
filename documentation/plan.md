@@ -23,14 +23,13 @@ TL;DR: Mapear cada célula não-obstáculo para um vértice; arestas = movimento
 - [x] `Main.lerTabuleiro()` — leitura de arquivo sem cabeçalho, inferência de dimensões, localização de `C` e `S`.
 - [x] `Tabuleiro.getNeighbors(Posicao)` — geração de vizinhança do cavalo com wrap toroidal e filtragem de obstáculos.
 - [x] `BuscaBFS.bfs(...)` — implementação da BFS com `int[][] dist` e `ArrayDeque`, comentário nas linhas-chave.
-- [ ] Integração e testes finais na `Main` (responsabilidade da Pessoa 2).
-- [ ] Completar `README.md` com relatório final e resultados dos testes (responsabilidade da Pessoa 2).
- - [ ] Integração e testes finais na `Main` (responsabilidade da Pessoa 2).
- - [ ] Confirmar formato/nome do arquivo de caso de teste e como será passado ao programa (stdin vs args).
- - [ ] Completar `README.md` com relatório final e resultados dos testes (responsabilidade da Pessoa 2).
- - [ ] Adicionar pseudocódigo e exemplo passo-a-passo do algoritmo no README.
- - [ ] Incluir análise de complexidade e eficiência no README.
- - [ ] Incluir figuras/tabelas ilustrativas (diagrama do tabuleiro/grafo, exemplo de camadas BFS) no relatório.
+- [x] Integração e testes finais na `Main` (BFS chamada e resultado impresso).
+- [x] Completar `README.md` com relatório final e resultados dos testes.
+ - [x] Confirmar formato/nome do arquivo de caso de teste e como será passado ao programa: tabuleiro de texto sem cabeçalho, passado via `stdin` (`java -cp out Main < tests/casoN.txt`).
+ - [x] Adicionar pseudocódigo e exemplo passo-a-passo do algoritmo no README.
+ - [x] Incluir análise de complexidade e eficiência no README (`O(R·C)`).
+ - [x] Incluir tabelas ilustrativas (resultados por caso, camadas BFS) no relatório.
+ - [ ] (Pendência de dados) Corrigir `tests/caso0.txt`: a linha 0 tem 41 caracteres e as demais 40 (grid não-retangular).
 
 **Instruções para Joao (passos para finalizar o trabalho)**
 
